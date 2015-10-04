@@ -12,7 +12,7 @@ $ curl -i -X POST -H "Content-Type:application/json" -d '{  "secretKey" : "ofw0k
 При добавлении фиксируется время принятия и IP отправителя
 
 
-Поиск события по secret key
+Поиск событий по secret key
 
 $ curl http://localhost:8080/events/search/findBySecretKey?key=ofw0k5YIA7
 
@@ -35,7 +35,7 @@ $ curl http://localhost:8080/events/search/findBySecretKey?key=ofw0k5YIA7
 }
 
 
-Поиск события по secret key и по имени события
+Поиск событий по secret key и по имени события
 
 $ curl http://localhost:8080/events/search/findBySecretKeyAndEventName?key=ofw0k5YIA7&name=marketOpen
 
