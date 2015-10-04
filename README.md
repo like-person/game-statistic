@@ -2,8 +2,10 @@
 
 С помощью Java 8/MongoDB/Maven (сетевой фреймворк свой, по выбору, в идеале что-либо, использующее Netty) создать сервис с REST Api для хранения статистики приложений (некий аналог Flurry)
 
+Я использовал фреймворк Spring
+Таблица Event (id - ИД записи; secretKey - secret key; eventName - имя евента; eventIp - ip отправителя; eventTime - время отправления)
 
-Добавление события
+Добавление события. Входные данные: secretKey, eventName:
 
 $ curl -i -X POST -H "Content-Type:application/json" -d '{  "secretKey" : "ofw0k5YIA7",  "eventName" : "marketOpen" }' http://localhost:8080/events
 
